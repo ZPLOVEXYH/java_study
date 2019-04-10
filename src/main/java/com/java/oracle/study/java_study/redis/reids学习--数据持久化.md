@@ -1,5 +1,5 @@
 一、概述
-
+        https://www.cnblogs.com/xiaoxi/category/961351.html
       Redis的强大性能很大程度上都是因为所有数据都是存储在内存中的，然而当Redis重启后，所有存储在内存中的数据将会丢失，在很多情况下是无法容忍这样的事情的。所以，我们需要将内存中的数据持久化！典型的需要持久化数据的场景如下：
 
     将Redis作为数据库使用；
@@ -26,7 +26,7 @@
 
       Redis允许用户自定义快照条件，当满足条件时自动执行快照。缺省情况下，Redis把数据快照存放在磁盘上的二进制文件中，文件名为dump.rdb，此外，我们也可以通过配置文件来修改Redis服务器dump快照的频率，在打开redis.windows.conf文件之后，我们搜索save，可以看到下面的配置信息：
       
-![Alt text](../images/redis001.png)
+![Alt 图片只是你还](images/redis001.png)
 
 注意最后三行，分别表示：
 
