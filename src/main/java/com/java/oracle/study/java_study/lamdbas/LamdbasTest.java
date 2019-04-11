@@ -73,5 +73,9 @@ public class LamdbasTest {
         Map<Long, User> maps = new LinkedHashMap<>();
         userMap.entrySet().stream().sorted(Map.Entry.comparingByKey()).forEachOrdered(longUserEntry -> maps.put(longUserEntry.getKey(), longUserEntry.getValue()));
 
+        /**
+         * 使用collections工具类来进行排序操作
+         */
+        Collections.sort(userList, (x, y) -> x.getUsername().compareTo(y.getUsername()));
     }
 }
