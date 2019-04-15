@@ -77,5 +77,13 @@ public class LamdbasTest {
          * 使用collections工具类来进行排序操作
          */
         Collections.sort(userList, (x, y) -> x.getUsername().compareTo(y.getUsername()));
+
+        /**
+         * 排列方式
+         */
+        System.out.println("排序方式4");
+        userList.stream().sorted((x, y) -> x.getAge() - y.getAge()).collect(Collectors.toList()).forEach(System.out::println);
+
+        System.out.println(userList.stream().findFirst().toString());
     }
 }
